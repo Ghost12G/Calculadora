@@ -6,8 +6,16 @@ function sumar(a, b) {
 	return a + b;
 }
 
-function resta(a, b) {
+function restar(a, b) {
 	return a - b;
+}
+
+function multiplicar(a, b) {
+	return a * b;
+}
+
+function dividir(a, b) {
+	return a / b;
 }
 
 btn.addEventListener("click", () => {
@@ -21,7 +29,15 @@ btn.addEventListener("click", () => {
 			break;
 
 		case "resta":
-			solucion = resta(num1, num2);
+			solucion = restar(num1, num2);
+			break;
+
+		case "multiplicacion":
+			solucion = multiplicar(num1, num2);
+			break;
+
+		case "division":
+			solucion = dividir(num1, num2);
 			break;
 	}
 
