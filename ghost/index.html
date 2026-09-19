@@ -8,17 +8,41 @@
 </head>
 
 <body>
-    <h1>CONVERTIRO DE TEMPERATURA A FARENGEI</h1>
-    <input type="text" id="calculo" placeholder="Ingrese grados celcius">
-    <br><br><br>
-    <h2 id="Resultado"></h2>
-    <button type="button" onclick="farengei()"> °F </button>
-    <br><br><br><br>
-    <button type="button" onclick="celsius()"> °C </button>
+    <form action="">
+        <label for="number">Ingrese Numero Para operacion</label>
+        <br><br>
+        <input type="text" name="number" id="resultado" placeholder="ingrese Numero" required>
+        <br><br>
+        <!-- BOTONES -->
+        <button type="button" onclick="numero(1)"> 1 </button>
+        <button type="button" onclick="numero(2)"> 2 </button>
+        <button type="button" onclick="numero(3)"> 3 </button>
+        <button type="button" onclick="numero(4)"> 4 </button>
+        <button type="button" onclick="numero(5)"> 5 </button>
+        <button type="button" onclick="numero(6)"> 6 </button>
+        <button type="button" onclick="numero(7)"> 7 </button>
+        <button type="button" onclick="numero(8)"> 8 </button>
+        <button type="button" onclick="numero(9)"> 9 </button>
+        <button type="button" onclick="numero(0)"> 0 </button>
+        <br><br>
+
+        <!-- OPERADORES -->
+        <button type="button" onclick="suma()"> + </button>
+        <button type="button" onclick="resta()"> - </button>
+        <button type="button" onclick="multiplicar()"> x </button>
+        <button type="button" onclick="dividir()"> / </button>
+        
+        <!-- RESULTADO -->
+        <button type="button" onclick="calcular()"> = </button>
+
+         <!-- LIMPIADOR -->
+        <button type="button" onclick="limpiar()"> C </button>
+
+    </form>
+
 
 
     <script src="app.js"></script>
-
 </body>
 
 </html>
